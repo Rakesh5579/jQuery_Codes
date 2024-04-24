@@ -1,0 +1,30 @@
+<!--
+    slideUp and slidedown code
+    24 Apr 2024 10:38PM
+    Coded by Rakesh Swami
+-->
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function()
+            {
+                $("#down").click(function()
+                    {
+                        $("h3").slideDown("slow").css("color","blue");
+                    });
+                $("#up").click(function()
+                    {
+                        $("h3").slideUp();
+                    });
+            });
+    </script>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <button id="down">Slide Down</button>
+    <button id="up">Slide Up</button>
+</body>
+</html>

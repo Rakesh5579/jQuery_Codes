@@ -1,0 +1,23 @@
+<!--
+    "Blur" jQuery event method code
+    24 Apr 2024 10:38PM
+    Coded by Rakesh Swami
+-->
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function()
+            {
+                $("input").blur(function()
+                    {
+                        $(this).css("background-color","skyblue");// After you type and move cursor to anywhere it will filled by "Skyblue" color
+                    });
+            });
+    </script>
+</head>
+<body>
+    Name:<input type="text">
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function()
+            {
+                $("button").mouseleave(function()
+                    {
+                        $("p").toggle("slow").css("color","red").css("background-color","skyblue");
+                    });
+            });
+    </script>
+</head>
+<body>
+    <p>Hello World!</p>
+    <button id="hide">Toggle</button><br>
+</body>
+</html>
