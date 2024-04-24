@@ -1,0 +1,43 @@
+<!--
+    Animate code
+    24 Apr 2024 10:38PM
+    Coded by Rakesh Swami
+-->
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function()
+{
+  $("#btn1").click(function()
+  {
+    $("#box").animate({height: "500px",width:"500px"});
+  });
+
+  $("#btn2").click(function()
+  {
+    $("#box").animate({height: "0px",width:"0px"});
+  });
+});
+</script>
+<style>
+    #box
+    {
+        background: red;
+        border-radius: 100%;
+    }
+    button:hover
+    {
+      color:red;
+      background-color: blue;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset</button>
+<div id="box"></div>
+</body>
+</html>
